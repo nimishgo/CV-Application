@@ -1,0 +1,20 @@
+a {
+  display: flex;
+  align-items: center;
+}
+a:visited {
+  color: white;
+}
+.footer {
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 2px;
+  padding: 10px;
+  bottom: 0;  
+}
