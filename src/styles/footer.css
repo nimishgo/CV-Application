@@ -7,14 +7,12 @@ a:visited {
 }
 .footer {
   font-weight: 700;
-  background-color: black;
+  background-color: rgb(61, 61, 61);
   color: white;
-  position: fixed;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   word-spacing: 2px;
   padding: 10px;
-  bottom: 0;  
+  /* bottom: 0;   */
 }
