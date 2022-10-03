@@ -1,0 +1,50 @@
+/* .info {
+  background-color: aliceblue;
+  margin: 2vh 5vw;
+  width: 25vw;
+} */
+
+.info {
+  width: 40vw;
+}
+legend {
+  color: #aaa;
+  padding: 5px;
+  font-weight: 900;
+}
+form {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input {
+  width: 90%;
+  border: 2px solid #222;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  margin: 10px;
+  background-color: #121212;
+  color: white;
+  display: flex;
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+  border: 2px solid rgba(253, 245, 230, 0.25);
+}
+
+textarea {
+  width: 90%;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.5em;
+  padding: 5px 10px;
+  background-color: #121212;
+  color: white;
+  resize: none;
+}
+
+.field_set {
+  position: relative;
+  border-radius: 0.5em;
+  border: 2px solid #222;
+}
