@@ -115,7 +115,16 @@ class Experience extends Component {
               onClick={() => {
                 this.setState(
                   {
-                    experience : [...experience,{branch:"",cgpa:"",city: "",collegeName: "",degree: "",from: "",to: "",id:uniqid()}],
+                    experience : [...experience,
+                      { 
+                        companyName: '',
+                        position: '',
+                        city: '',
+                        from: '',
+                        to: '',
+                        description: '',
+                        id: uniqid(), 
+                      }],
                   }
                   );
               }}
