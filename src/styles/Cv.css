@@ -1,12 +1,7 @@
-/* .info {
-  background-color: aliceblue;
-  margin: 2vh 5vw;
-  width: 25vw;
-} */
-
 .info {
   width: 40vw;
 }
+
 legend {
   color: #aaa;
   padding: 5px;
@@ -17,11 +12,11 @@ form {
 }
 
 input {
-  width: 90%;
+  width: 93%;
   border: 2px solid #222;
+  margin: 10px auto;
   padding: 5px 10px;
   border-radius: 0.5em;
-  margin: 10px;
   background-color: #121212;
   color: white;
   display: flex;
@@ -33,18 +28,48 @@ input:focus, textarea:focus {
 }
 
 textarea {
-  width: 90%;
-  margin: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  width: 93%;
+  margin: 10px auto;
+  border: 2px solid #222;
   border-radius: 0.5em;
   padding: 5px 10px;
   background-color: #121212;
   color: white;
+  display: flex;
   resize: none;
 }
 
 .field_set {
   position: relative;
   border-radius: 0.5em;
+  padding: 5px 10px;
   border: 2px solid #222;
+}
+
+input[type="button"] {
+  background-color: #222;
+  color: #aaa;
+  width: fit-content;
+}
+
+input[type="button"]:hover {
+  background-color: #aaa;
+  color: #121212;
+}
+
+@media only screen and (max-width: 786px) {
+  .info {
+    width: 90vw;
+    margin: 4px;
+  }
+}
+
+.buttons, .buttons > input{
+  display: flex; 
+  margin: 5px 10px;
+  /* justify-content: space-between */
+  /* align-items: center; */
+  /* gap: 5px; */
+  /* margin: -2px 0 5px 0; */
+  /* margin-right: 6px;  */
 }

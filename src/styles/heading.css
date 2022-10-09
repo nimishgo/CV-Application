@@ -1,5 +1,7 @@
 
 .Heading {
+  /* position: fixed; */
+  width: 100%;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -10,5 +12,6 @@
   background-color: rgb(61, 61, 61);
   position: sticky;
   color: white;
-  height: 5vh;
+  height: 4vh;
+  z-index: 5;
 }

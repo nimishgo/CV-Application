@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.cv {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.cvMain {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 4px 4px 48px 4px;
+  top: 0;  
+  background-color: #fff;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin : 1%;
+  /* box-shadow: 4px 8px 4px 8px #999; */
+}
+
+@media only screen and (max-width: 800px) {
+  .cv {
+      grid-template-columns: 1fr;
+  }
+
+  .cvMain {
+          overflow: scroll;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+}
+
+span {
+  display: flex ;
+  padding-right: 8px;
+  gap : 8px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.heading {
+  font-size: 36px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education,.project,.skills,.experience {
+  margin-top: 32px;
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+}
+
+.education >* , .project >* , .experience>*{
+  margin: 4px;
+  /* padding : 4px; */
+}
+
+.collegeName , .projectName{
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textArea {
+  max-width: 620px;
+  max-height: 7em;
+  word-wrap: break-word;
+}
+
+.skills >* {
+  margin: 2px;
+}
+
+.highlight {
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
