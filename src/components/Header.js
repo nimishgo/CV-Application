@@ -13,7 +13,6 @@ class Header extends Component {
     return <header className="Heading">{this.title}</header>
   }
 
-
 }
 
 export default Header;
