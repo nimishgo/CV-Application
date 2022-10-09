@@ -6,7 +6,7 @@ const CvMain = ({info,education,experience,project,skills,loadExample,resetIt}) 
   console.log(project);
 
   const generatePdf = () => {
-      let doc = new jsPDF('p','px',[1250,1000]);
+      let doc = new jsPDF('p','px',[1094,1225]);
       doc.html(document.querySelector('.cvMain'), {
         callback: function(pdf){
           let pageCount = doc.internal.getNumberOfPages();
@@ -37,7 +37,7 @@ const CvMain = ({info,education,experience,project,skills,loadExample,resetIt}) 
                 <h2>Education</h2>
                 {education.map((val,index) => (
                   <div className="education" key={val.id}>
-                    <h3 className='collegeName'><div>
+                    <h3 className='collegeName highlight'><div>
                       <strong>
                       {val.collegeName}
                       </strong>
@@ -54,7 +54,7 @@ const CvMain = ({info,education,experience,project,skills,loadExample,resetIt}) 
                 <h2>Experience</h2>
                 {experience.map((val,index) => (
                   <div className="experience" key={val.id}>
-                    <h3 className='collegeName'><div>
+                    <h3 className='collegeName highlight'><div>
                       <strong>
                       {val.companyName} &thinsp;,&thinsp; {val.position}
                       </strong>
@@ -69,7 +69,7 @@ const CvMain = ({info,education,experience,project,skills,loadExample,resetIt}) 
                 <h2>Projects</h2>
                 {project.map((val,index) => (
                   <div className="project" key={val.id}>
-                    <h3 className='projectName'><div>
+                    <h3 className='projectName highlight'><div>
                       <strong>
                       {val.projectName}
                       </strong>
