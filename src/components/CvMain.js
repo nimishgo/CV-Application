@@ -5,6 +5,10 @@ const CvMain = ({info,education,experience,project,skills}) => {
   console.log(project);
   return (
     <>
+      <div className="buttons">
+            <input type="button" value="load example" />
+            <input type="button" value="download pdf" />
+      </div>
       <section className="cvMain">
               <article className='personals' key='personals'>
                 <h1 className='heading'>{name}</h1>
