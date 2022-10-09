@@ -7,6 +7,8 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import uniqid from 'uniqid';
+import example from "./examples/Example";
+import empytExample from "./examples/Empty";
 
 class Cv extends Component {
   
@@ -148,6 +150,16 @@ class Cv extends Component {
       console.log(this.state.skills);
   }
 
+  loadExample = () => {
+    // console.log(example);
+    this.setState(example);
+  } 
+
+
+  resetIt = () => {
+    console.log(empytExample);
+    this.setState(empytExample);
+  } 
 
   render() {
     return (
@@ -171,7 +183,7 @@ class Cv extends Component {
             <Skills renderSkill={this.renderSkill}/>      
         </div>
         <div className="downloadCV">
-          <CvMain {...this.state}/>
+          <CvMain {...this.state} loadExample={this.loadExample} resetIt={this.resetIt}/>
         </div>
       </>
       );
