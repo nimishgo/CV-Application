@@ -4,10 +4,10 @@ class Basics extends Component {
   constructor(props) {
     super(props);
     this.state = {...props};
-    console.log(this.state);
+    // console.log(this.state);
   }
 
-  renderChange = (e) => {
+  renderCh = (e) => {
       this.setState({
         info: {
           name: e.target.value,
@@ -16,7 +16,7 @@ class Basics extends Component {
       this.state.renderName(e.target.value);
     }
 
-    renderEmail = (e) => {
+    renderEm = (e) => {
       this.setState({
         info: {
           email: e.target.value,
@@ -25,7 +25,7 @@ class Basics extends Component {
       this.state.renderEmail(e.target.value);
   }
 
-    renderGit = (e) => {
+    renderGi = (e) => {
       this.setState(
         {
           info: {
@@ -36,7 +36,7 @@ class Basics extends Component {
       this.state.renderGit(e.target.value);
     }
 
-    renderLinkedin = (e) => {
+    renderLi = (e) => {
       this.setState(
         {
           info: {
@@ -47,7 +47,7 @@ class Basics extends Component {
       this.state.renderLinkedin(e.target.value);
     }
 
-    renderPhone = (e) => {
+    renderPh = (e) => {
       this.setState(
         {
           info: {
@@ -68,7 +68,7 @@ class Basics extends Component {
       <fieldset className="field_set">
       <legend>Basic Information</legend>
         <input 
-          onChange={this.renderChange}
+          onChange={this.renderCh}
           value={info.name}
           type="text" 
           name="name" 
@@ -76,7 +76,7 @@ class Basics extends Component {
           placeholder="Your full name"
           />
         <input
-          onChange={this.renderEmail}
+          onChange={this.renderEm}
           value={info.email}
           type="text" 
           name="name" 
@@ -84,7 +84,7 @@ class Basics extends Component {
           placeholder="Email eg. johndoe@gmail.com"
           />
         <input
-          onChange={this.renderGit}
+          onChange={this.renderGi}
           value={info.git}
           type="text" 
           name="name" 
@@ -92,7 +92,7 @@ class Basics extends Component {
           placeholder="Github link"
           />
         <input
-          onChange={this.renderLinkedin}
+          onChange={this.renderLi}
           value={info.Linkedin} 
           type="text" 
           name="name" 
@@ -101,7 +101,7 @@ class Basics extends Component {
           
           />
         <input
-          onChange={this.renderPhone}
+          onChange={this.renderPh}
           value={info.phone} 
           type="text" 
           name="name" 
@@ -114,6 +114,5 @@ class Basics extends Component {
   );
   }
 }
-// export let arrOfInfo = [];
-// console.log(arrOfInfo);
+
 export default Basics;
