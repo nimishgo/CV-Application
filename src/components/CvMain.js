@@ -1,13 +1,14 @@
 import React from 'react';
 import {FiMail,FiGithub , FiLinkedin , FiPhone } from 'react-icons/fi'
-const CvMain = ({info,education,experience,project,skills}) => {
+const CvMain = ({info,education,experience,project,skills,loadExample,resetIt}) => {
   const {name,email,git,linkedin,phone} = info;
   console.log(project);
   return (
     <>
       <div className="buttons">
-            <input type="button" value="load example" />
-            <input type="button" value="download pdf" />
+            <input type="button" value="load example" onClick={loadExample}/>
+            <input type="button" value="download pdf"/>
+            <input type="button" value="reset" onClick={resetIt}/>
       </div>
       <section className="cvMain">
               <article className='personals' key='personals'>
