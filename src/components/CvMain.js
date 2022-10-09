@@ -1,8 +1,8 @@
 import React from 'react';
 import {FiMail,FiGithub , FiLinkedin , FiPhone } from 'react-icons/fi'
-const CvMain = ({info,education,experience}) => {
+const CvMain = ({info,education,experience,project}) => {
   const {name,email,git,linkedin,phone} = info;
-  console.log(education);
+  console.log(project);
   return (
     <>
       <section className="cvMain">
@@ -43,7 +43,22 @@ const CvMain = ({info,education,experience}) => {
                       {val.city}
                     </div>
                     <div>{val.from} - {val.to}</div></h3>
-                    <p>{val.description}</p>
+                    <p className='textArea'>{val.description}</p>
+                  </div>
+                ))}
+              </article>
+              <article className="project">
+                <h2>Projects</h2>
+                {project.map((val,index) => (
+                  <div className="project" key={val.id}>
+                    <h3 className='projectName'><div>
+                      <strong>
+                      {val.projectName}
+                      </strong>
+                    </div>
+                    <div>{val.from} - {val.to}</div>
+                    </h3>
+                    <p className='textArea'>{val.description}</p>
                   </div>
                 ))}
               </article>
